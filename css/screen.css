@@ -2,6 +2,27 @@
   #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 200;
+    src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
+         url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 400;
+    src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
+         url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 600;
+    src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
+         url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -20,12 +41,21 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: "HK Grotesk Web";
 }
 
 *,
 *:before,
 *:after {
+    color: #202024;
     box-sizing: inherit;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-style: 20px;
+        line-height: 1.6;
+    }
 }
 
 /*
@@ -36,7 +66,7 @@ html {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #5051DB;
     color: white;
     text-shadow: none;
 }
@@ -78,6 +108,12 @@ h3 {
     font-size: 26px;
     line-height: 32px;
     margin: 0 0 24px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 200;
 }
 
 h4,
@@ -136,18 +172,18 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #5051DB;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #3E3EA8;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #3E3EA8;
 }
 
 /*------------------------------------*\
@@ -194,7 +230,7 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em; /* 90 * 16px = 1440px */
+    max-width: 56.4em; /* 90 * 16px = 1440px */
 }
 
 /*
@@ -321,6 +357,23 @@ a:focus {
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
+
+/*
+    Utilities: color
+    ---
+    Utility classes to put specific colors onto elements
+*/
+
+.u-color-primary-light {
+
+}
+
+.u-color-primary-base {
+}
+
+.u-color-primary-dark {
+}
+
 
 /*
     Utilities: max-width
